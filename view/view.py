@@ -2,21 +2,28 @@ from common.iview import IView
 from common.imodel import IModel
 from common.icontroller import IController
 
-
 class View(IView):
-    # To be completed
+    __model: IModel
+    __controller: IController
 
-    def setActionPerformer(self, actionPerformer: IController) -> None:
-        pass
+    def __init__(self):
+        self.__model = None
+        self.__controller = None
 
     def setModel(self, model: IModel) -> None:
-        pass
+        self.__model = model
 
-    def setController(self, model: IController) -> None:
-        pass
+    def setController(self, controller: IController) -> None:
+        self.__controller = controller
 
     def showMessage(self, message: str) -> None:
-        pass
+        print(message)
 
     def askProposal(self) -> int:
-        pass
+        while True:
+            try:
+                self.showMessage("Entrez une proposition de nombre :")
+                num = int(input())
+                return num
+            except ValueError:
+                self.showMessage("Erreur : veuillez entrer un nombre entier valide.")

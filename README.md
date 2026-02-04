@@ -4,8 +4,8 @@
 
 ## Binôme
 
-- Nom Prénom - pseudo github
-- Nom Prénom - pseudo github
+- Jules Guerra - MUJUKO-AMB
+- Ivy Mechler - ZOMBITAC 
 
 ## Sujet
 
