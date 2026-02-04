@@ -3,7 +3,7 @@ from model.model import Model
 from view.view import View
 
 controller = Controller()
-model = Model()
+model = Model(10)
 view = View()
 controller.setModel(model)
 controller.setView(view)

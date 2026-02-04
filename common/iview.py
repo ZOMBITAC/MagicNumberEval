@@ -9,10 +9,6 @@ class IView(ABC):
         pass
 
     @abstractmethod
-    def setActionPerformer(self, actionPerformer: IController) -> None:
-        pass
-
-    @abstractmethod
     def setModel(self, model: IModel) -> None:
         pass
 
